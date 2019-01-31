@@ -1,0 +1,5 @@
+.*
+!.gitignore
+config.py
+chromedriver
+__pycache__
