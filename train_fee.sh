@@ -43,10 +43,12 @@ else
 fi
 
 if [ $4 = "r" ]; then
+  COEFF=2
   ROUND_TRIP="往復"
 else
+  COEFF=1
   ROUND_TRIP="片道"
 fi
 
-echo $1,${CAMPANY[$2]},,実世界情報処理に関する研究打合せ,${ROUTE[$3]},$ROUND_TRIP,IC,${FEE[$3]},,$REMARK
+echo $1,${CAMPANY[$2]},,実世界情報処理に関する研究打合せ,${ROUTE[$3]},$ROUND_TRIP,IC,`expr $COEFF \* ${FEE[$3]}`,,$REMARK
 
