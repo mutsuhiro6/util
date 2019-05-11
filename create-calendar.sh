@@ -1,7 +1,9 @@
 #!/bin/bash
 
-startdate="2019/06/13"
-enddate="2019/08/20"
+# 引数にstartdateとenddateをとります．
+# e.g. ./create-calendar.sh 2019/04/01 2019/05/18
+startdate=$1
+enddate=$2
 
 startsec=$(date -j -f "%Y/%m/%d" $startdate "+%s")
 endsec=$(date -j -f "%Y/%m/%d" $enddate "+%s")
