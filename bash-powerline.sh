@@ -66,7 +66,7 @@ __powerline() {
             # promptvars is disabled. Avoid creating unnecessary env var.
             local git="$COLOR_GIT$(__git_info)$RESET"
         fi
-        local arr="❯ "
+        local arr="> "
         PS1="$cwd$git\n$COLOR_ARROW$arr$RESET"
     }
 
