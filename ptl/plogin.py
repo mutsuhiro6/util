@@ -1,4 +1,4 @@
-#!/opt/local/bin/python
+#!/opt/local/bin/python3
 
 from selenium import webdriver
 import config
