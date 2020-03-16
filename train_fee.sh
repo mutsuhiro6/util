@@ -1,22 +1,18 @@
-#!/opt/local/bin/bash
+#! /opt/local/bin/bash
 
-declare -A FEE;
-
-FEE=(
-  ["y2o"]=349
-  ["o2y"]=349
-  ["t2y"]=360
-  ["y2t"]=360
-  ["t2nad"]=390
-  ["nad2t"]=390
-  ["nad2o"]=349
-  ["o2nad"]=349  
-  ["nad2y"]=165
-  ["y2nad"]=165
+declare -A FEE=(
+  ["y2o"]=356
+  ["o2y"]=356
+  ["t2y"]=367
+  ["y2t"]=367
+  ["t2nad"]=398
+  ["nad2t"]=398
+  ["nad2o"]=356
+  ["o2nad"]=356  
+  ["nad2y"]=170
+  ["y2nad"]=170
 )
-declare -A ROUTE;
-
-ROUTE=(
+declare -A ROUTE=(
   ["y2o"]="永田町→大岡山"
   ["o2y"]="大岡山→永田町"
   ["t2y"]="高津→永田町"
@@ -29,9 +25,7 @@ ROUTE=(
   ["y2nad"]="永田町→竹橋"
 )
 
-declare -A CAMPANY;
-
-CAMPANY=(
+declare -A CAMPANY=(
   ["y"]="ヤフー株式会社"
   ["nad"]="日建設計株式会社"
 )
