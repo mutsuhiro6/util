@@ -3,7 +3,7 @@
 from selenium import webdriver
 import config
 
-chromeDriver = "/Users/iwamoto/utils/ptl/chromedriver"
+chromeDriver = "/Users/iwamoto/util/ptl/chromedriver"
 browser = webdriver.Chrome(chromeDriver)
 browser.get('https://portal.nap.gsic.titech.ac.jp/GetAccess/Login?Template=userpass_key&AUTHMETHOD=UserPassword')
 browser.implicitly_wait(10)
