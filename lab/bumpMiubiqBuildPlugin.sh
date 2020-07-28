@@ -26,6 +26,6 @@ git checkout -b $bumpBranch \
 && git push -u origin $bumpBranch \
 && open "https://bitbucket.org/icslab/$repoName/pull-requests/new?dest=icslab/$repoName::develop&source=icslab/$repoName::$bumpBranch#diff"
 
-git checkout $currentBranch && if [ $stash = 0]; then git stash pop; fi
+git checkout $currentBranch && if [ $stash = 0 ]; then git stash pop; fi
 
-echo -e "I bumped miubiq-build-plugin version from $1 to $2.\nI appreciate it if you make prompt approval.\nThank you for your cooperation.
+echo -e "I bumped miubiq-build-plugin version from $1 to $2.\nI appreciate it if you make prompt approval.\nThank you for your cooperation."

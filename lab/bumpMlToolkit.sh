@@ -28,4 +28,4 @@ git checkout -b $bumpBranch \
 
 git checkout $currentBranch && if [ $stash = 0 ]; then git stash pop; fi
 
-echo -e "I bumped mltoolkit version from $1 to $2.\nI appreciate it if you make prompt approval.\nThank you for your cooperation."
+echo -e "I bumped mltoolkit version from $1 to $2.\n\nI appreciate it if you make prompt approval.\n\nThank you for your cooperation."
