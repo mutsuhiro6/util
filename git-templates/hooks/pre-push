@@ -3,7 +3,7 @@
 # Gradle project
 if [ -f gradlew ]; then
   echo "This is a Gradle project. Build before push."
-  ./gradlew build
+  ./gradlew -q build
   exit $?
 fi
 
