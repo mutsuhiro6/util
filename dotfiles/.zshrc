@@ -1,4 +1,4 @@
-export PROMPT="%c
+export PROMPT="%~
 %F{magenta}$ %f"
 
 autoload -U compinit ; compinit
