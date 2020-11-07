@@ -1,0 +1,17 @@
+#! /usr/bin/env bash
+
+# Gradle project
+if [ -f gradlew ]; then
+  echo "This is a Gradle project. Build before push."
+  ./gradlew -q build
+  exit $?
+fi
+
+# OMake project
+  if [ -f OMakefile ]; then
+   echo "This is a OMake project. Make before push."
+   omake
+   exit $?
+fi
+
+exit 0
