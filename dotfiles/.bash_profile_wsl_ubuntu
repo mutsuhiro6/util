@@ -20,7 +20,7 @@ export SBT_HOME="/opt/sbt-1.4.4"
 export PATH=$SBT_HOME/bin:$PATH
 
 ## Windows home directory
-export WIN_HOME="/mnt/c/Users/mutushiro
+export WIN_HOME="/mnt/c/Users/mutsuhiro"
 
 alias cl=clear
 alias la="ls -a"
