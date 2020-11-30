@@ -19,6 +19,9 @@ export PATH="$JAVA_HOME/bin:$PATH"
 export SBT_HOME="/opt/sbt-1.4.4"
 export PATH=$SBT_HOME/bin:$PATH
 
+## Windows home directory
+export WIN_HOME="/mnt/c/Users/mutushiro
+
 alias cl=clear
 alias la="ls -a"
 alias ll="ls -la"
