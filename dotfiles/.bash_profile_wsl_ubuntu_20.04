@@ -16,7 +16,7 @@ export JAVA_HOME=$JAVA11_HOME
 export PATH="$JAVA_HOME/bin:$PATH"
 
 ## Sbt settings
-export SBT_HOME="/opt/sbt-1.4.4"
+export SBT_HOME="/opt/sbt"
 export PATH=$SBT_HOME/bin:$PATH
 
 ## Windows home directory
