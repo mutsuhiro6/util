@@ -1,0 +1,51 @@
+function meigen () {
+	rand=$(($RANDOM % 10))
+	if [ $rand -eq 0 ]; then
+		source $HOME/util/yoshii-meigen.sh
+	else
+		source $HOME/util/meigen.sh
+	fi
+}
+
+export PS1="\w\n\[\e[1;35m\]$\[\e[m\] "
+
+## JAVA settings
+export JAVA8_HOME="/Library/Java/JavaVirtualMachines/liberica-jdk-8-full.jdk/Contents/Home"
+export JAVA11_HOME="/Library/Java/JavaVirtualMachines/liberica-jdk-11-full.jdk/Contents/Home"
+export JAVA_HOME=$JAVA11_HOME
+export PATH="$JAVA_HOME/bin:$PATH"
+
+## Homebrew settings
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+
+## sbt 
+export PATH=/opt/sbt/bin:$PATH
+## gradle
+export PATH=/opt/gradle/gradle-6.8.1/bin:$PATH
+
+# Exclude MacOS system files into tar archives
+export COPYFILE_DISABLE=1
+
+alias cl=clear
+alias la="ls -ah"
+alias ll="ls -lha"
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
+meigen
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
